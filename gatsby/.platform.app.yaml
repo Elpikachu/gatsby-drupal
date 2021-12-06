@@ -7,7 +7,7 @@ type: 'nodejs:14'
 # Restrict memory use when running during post deploy hook.
 variables:
     env:
-        NODE_OPTIONS: --max_old_space_size=1536
+        NODE_OPTIONS: --max_old_space_size=2048
 
 relationships:
     drupal: 'drupal:http'
